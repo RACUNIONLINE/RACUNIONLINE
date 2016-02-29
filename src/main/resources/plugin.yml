@@ -1,0 +1,11 @@
+name: RACUNIONLINE-MAIN
+version: 0.1-SNAPSHOT
+main: io.github.RaCuNi.RACUNIONLINE.Main
+description: RACUNIONLINE!
+author: RaCuNi, Jogon123
+commands:
+  shutdown:
+    description: shutdown the server.
+    usage: /<command>
+    permission: raon.shutdown
+    permission-message: you don't have permission!
