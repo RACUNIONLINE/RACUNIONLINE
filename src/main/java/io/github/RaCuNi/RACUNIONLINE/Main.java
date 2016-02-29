@@ -35,8 +35,7 @@ public class Main extends JavaPlugin{
 				sender.sendMessage("This command can only run by a player.");
 			} else {
 				Player player = (Player) sender;
-				getLogger().info(player+" used messenger!");
-				Bukkit.broadcastMessage(ChatColor.GOLD+"["+ChatColor.BLUE+player+ChatColor.GOLD+"]" + " " + ChatColor.COLOR_CHAR + args[0]);
+				Bukkit.broadcastMessage(ChatColor.GOLD+"["+ChatColor.BLUE+player.getName()+ChatColor.GOLD+"]" + " " + ChatColor.RESET + args);
 				return true;
 			}
 		}
@@ -61,8 +60,7 @@ public class Main extends JavaPlugin{
 				player.playSound(player.getLocation(), Sound.LEVEL_UP, 2, 3);
 				player.getInventory().addItem(ironsword, ironaxe, ironpickaxe, ironspade, milk);
 				player.playSound(player.getLocation(), Sound.ITEM_PICKUP, 2, 3);
-				getLogger().info("Raon First Item given to " + ChatColor.GOLD + player);
-				player.sendMessage(ChatColor.GOLD + "Ra"+ ChatColor.BLUE + "on" + " " + ChatColor.GREEN + "First Item" + " " + ChatColor.MAGIC + "HOLIC" + ChatColor.YELLOW + "has given!");
+				player.sendMessage(ChatColor.GOLD + "RA"+ ChatColor.BLUE + "ON" + " " + ChatColor.GREEN + "First Item" + " " + ChatColor.YELLOW + "has given!");
 				return true;
 			}
 		}
