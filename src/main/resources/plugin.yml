@@ -6,6 +6,16 @@ author: RaCuNi, Jogon123
 commands:
   shutdown:
     description: shutdown the server.
-    usage: /<command>
+    usage: /shutdown
     permission: raon.shutdown
-    permission-message: you don't have permission!
+    permission-message: you dont have permission!
+  messenger:
+    description: broadcast message.
+    usage: /messenger <message>
+    permission: raon.messenger
+    permission-message: you dont have permission!
+  raonitem:
+    description: give first item to player.
+    usage: /raonitem
+    permission: raon.raonitem
+    permission-message: you dont have permission!
